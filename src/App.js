@@ -46,8 +46,8 @@ function App() {
       <Alert alert={alert}/>
       <div className="container">
           <Routes>
-            <Route exact path="/about" element={<About/>}></Route>
-            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter your Text to analyze" mode={mode}/>}></Route>
+            <Route exact path="/about" element={<About mode={mode}/>}></Route>
+            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Try Text Utils - word conter, character counter etc." mode={mode}/>}></Route>
           </Routes>
           {/*<TextForm showAlert={showAlert} heading="Enter your Text to analyze" mode={mode}/>*/}
       </div>
